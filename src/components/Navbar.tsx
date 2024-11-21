@@ -19,6 +19,7 @@ const NavBar: React.FC = () => {
         <Navbar.Brand href="/">Introduction to Python</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
+          {/*
           <Nav className="ms-auto justify-content-start">
             {currentUser
               ? [
@@ -38,7 +39,8 @@ const NavBar: React.FC = () => {
               ''
             )}
           </Nav>
-          <Nav>
+          */}
+          <Nav className="ms-auto justify-content-start">
             {session ? (
               <NavDropdown id="login-dropdown" title={currentUser}>
                 <NavDropdown.Item id="login-dropdown-sign-out" href="/api/auth/signout">

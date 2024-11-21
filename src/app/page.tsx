@@ -3,7 +3,7 @@ import PythonIntro from '@/components/PythonIntro';
 import PythonStrings from '@/components/PythonStrings';
 import PythonSyntax from '@/components/PythonSyntax';
 import PythonVariables from '@/components/PythonVariables';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row, Image } from 'react-bootstrap';
 
 /** The Home page. */
 const Home = () => (
@@ -20,6 +20,13 @@ const Home = () => (
           </a>
         </Col>
       </Row>
+      <Col>
+        <Image
+          src="pythongif.gif"
+          alt="Python Logo Gif"
+          height={500}
+        />
+      </Col>
     </Container>
     <hr />
     <Container>
