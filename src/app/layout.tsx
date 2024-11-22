@@ -2,15 +2,8 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from '@/components/Navbar';
+import EyeTrackingWrapper from '@/components/EyeTrackingWrapper';
 import Providers from './providers';
-
-// eslint-disable-next-line no-lone-blocks
-{ /* import FinishedButton from '@/components/FinishedButton'; */ }
-// eslint-disable-next-line no-lone-blocks
-{ /* import { Container } from 'react-bootstrap'; */ }
-
-// eslint-disable-next-line no-lone-blocks
-{ /* import EyeTrackingWrapper from '@/components/EyeTrackingWrapper'; */ }
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -29,14 +22,14 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Add WebGazer.js Script via CDN */}
-        {/* <script src="https://webgazer.cs.brown.edu/webgazer.js" async /> */}
+        <script src="https://webgazer.cs.brown.edu/webgazer.js" async />
 
       </head>
       <body className={classString}>
         <Providers>
           <NavBar />
           {/* EyeTracking component to track gaze */}
-          {/* <EyeTrackingWrapper /> */}
+          <EyeTrackingWrapper />
           {children}
         </Providers>
       </body>
