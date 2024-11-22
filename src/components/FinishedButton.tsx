@@ -5,16 +5,18 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { useRouter } from 'next/navigation';
 
 function Example() {
   const [show, setShow] = useState(false);
+  const router = useRouter();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button className="btn-lg" variant="primary" onClick={handleShow}>
         Finish Lesson
       </Button>
 
@@ -49,7 +51,7 @@ function Example() {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={() => router.push('/quiz')}>
             Begin Quiz
           </Button>
         </Modal.Footer>
