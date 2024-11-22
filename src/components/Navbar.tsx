@@ -14,9 +14,9 @@ const NavBar: React.FC = () => {
   const role = userWithRole?.randomKey;
   const pathName = usePathname();
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar style={{ backgroundColor: '#024731' }} expand="lg">
       <Container>
-        <Navbar.Brand href="/">Introduction to Python</Navbar.Brand>
+        <Navbar.Brand href="/" style={{ color: 'white' }}>Introduction to Python</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           {/*
