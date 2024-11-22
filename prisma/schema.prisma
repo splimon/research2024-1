@@ -43,3 +43,10 @@ model Stuff {
   condition Condition
   owner     String
 }
+
+model Quiz {
+  id            Int       @id @default(autoincrement())
+  question      String
+  answers       String[]
+  correctanswer String
+}
