@@ -27,8 +27,6 @@ model User {
   email    String @unique
   password String
   role     Role   @default(USER)
-  
-  QuizSubmission QuizSubmission[]
 }
 
 enum Condition {
@@ -47,11 +45,10 @@ model Stuff {
 }
 
 model QuizSubmission {
-  id              Int       @id @default(autoincrement())
-  userId          Int?
-  user            User?     @relation(fields: [userId], references: [id])
-  score           Int
-  correctAnswers  Int
-  wrongAnswers    Int
-  createdAt       DateTime  @default(now())
+  id            Int     @id @default(autoincrement())
+  userId        Int?    // Optional field
+  score         Int
+  correctAnswers Int
+  wrongAnswers  Int
+  createdAt     DateTime @default(now())
 }
