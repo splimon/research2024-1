@@ -9,7 +9,11 @@ const PythonSyntax = () => (
         <h2 className="padding"><strong><u>Python Syntax</u></strong></h2>
 
         <h3 className="padding">Python Indentation</h3>
-        <p>Indentation refers to the spaces at the beginning of a code line.</p>
+        <p>
+          <strong>Indentation</strong>
+          {' '}
+          refers to the spaces at the beginning of a code line.
+        </p>
         <p>
           Where in other programming languages the indentation in code is for readability only,
           the indentation in Python is very important.

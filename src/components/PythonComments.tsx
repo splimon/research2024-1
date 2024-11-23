@@ -12,7 +12,7 @@ const PythonComments = () => (
         <p>Python has commenting capability for the purpose of in-code documentation.</p>
         <p>Comments start with a #, and Python will render the rest of the line as a comment:</p>
 
-        <Card className="example-card hover-card">
+        <Card className="example-card">
           <h3 className="padding-bottom">Example</h3>
           <p>Comments in Python:</p>
 
@@ -33,7 +33,7 @@ const PythonComments = () => (
 
         <p>Comments can be placed at the end of a line, and Python will ignore the rest of the line:</p>
 
-        <Card className="example-card hover-card">
+        <Card className="example-card">
           <h3 className="padding-bottom">Example</h3>
           <div className="w3-code notranslate pythonHigh">
             <span className="pythoncolor" style={{ color: 'black' }}>

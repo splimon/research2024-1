@@ -82,6 +82,26 @@ li {
   border-radius: 5px;
 }
 
+/* Check Understanding Cards */
+.understanding-card {
+  padding: 8px 20px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin: 24px -20px;
+  box-shadow: none !important;
+
+  background-color: #c9e9bfea !important;
+  border-radius: 5px;
+}
+
+.white-box {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
 .w3-code {
   width: auto;
   background-color: #fff;

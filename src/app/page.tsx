@@ -1,4 +1,5 @@
 import FinishedButton from '@/components/FinishedButton';
+import PythonBooleans from '@/components/PythonBooleans';
 import PythonComments from '@/components/PythonComments';
 import PythonIntro from '@/components/PythonIntro';
 import PythonStrings from '@/components/PythonStrings';
@@ -59,6 +60,13 @@ const Home = () => (
       {' '}
       <br />
     </Container>
+    <hr />
+    <Container>
+      <PythonBooleans />
+      {' '}
+      <br />
+    </Container>
+    <hr />
     <Container style={{ paddingBottom: '5rem', paddingTop: '3rem' }} className="text-center">
       <FinishedButton />
     </Container>

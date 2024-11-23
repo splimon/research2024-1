@@ -61,3 +61,7 @@ html, body {
   .container p {
     padding: 8px 0;
   }
+
+  .quiz-container h3 {
+    white-space: pre-wrap;
+  }

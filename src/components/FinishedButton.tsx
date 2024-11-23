@@ -16,7 +16,7 @@ function Example() {
 
   return (
     <>
-      <Button className="btn-lg" variant="primary" onClick={handleShow}>
+      <Button className="btn-lg" variant="danger" onClick={handleShow}>
         Finish Lesson
       </Button>
 
@@ -51,7 +51,7 @@ function Example() {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={() => router.push('/quiz')}>
+          <Button variant="danger" onClick={() => router.push('/quiz')}>
             Begin Quiz
           </Button>
         </Modal.Footer>

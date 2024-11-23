@@ -120,7 +120,7 @@ const QuizPage = () => {
       </div>
       <div>
         {!showResult ? (
-          <div className="quiz-container">
+          <div className="quiz-container" style={{ padding: '2rem', marginBottom: '3rem' }}>
             <h3>{questions[activeQuestion].question}</h3>
             {answers.map((answer, idx) => (
               // eslint-disable-next-line max-len
