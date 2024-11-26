@@ -154,7 +154,7 @@ const QuizPage = () => {
             <h3>Results</h3>
             <h3>
               Overall: &nbsp;
-              {(result.score / 25) * 100}
+              {(result.score / (questions.length * 5)) * 100}
               %
             </h3>
             <p>
