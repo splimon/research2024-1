@@ -6,6 +6,26 @@ import { redirect } from 'next/navigation';
 import { prisma } from './prisma';
 
 /**
+ * Saves quiz results to the database.
+ * @param quizResult, an object with the following properties: userId, score, correctAnswers, wrongAnswers.
+ */
+export async function saveQuizResult(quizResult: {
+  userId: number | null;
+  score: number;
+  correctAnswers: number;
+  wrongAnswers: number;
+}) {
+  await prisma.quizSubmission.create({
+    data: {
+      userId: quizResult.userId, // Explicitly include userId
+      score: quizResult.score,
+      correctAnswers: quizResult.correctAnswers,
+      wrongAnswers: quizResult.wrongAnswers,
+    },
+  });
+}
+
+/**
  * Adds a new stuff to the database.
  * @param stuff, an object with the following properties: name, quantity, owner, condition.
  */

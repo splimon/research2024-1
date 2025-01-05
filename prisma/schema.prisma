@@ -43,3 +43,12 @@ model Stuff {
   condition Condition
   owner     String
 }
+
+model QuizSubmission {
+  id            Int     @id @default(autoincrement())
+  userId        Int?    // Optional field
+  score         Int
+  correctAnswers Int
+  wrongAnswers  Int
+  createdAt     DateTime @default(now())
+}
